@@ -1,0 +1,163 @@
+/*Start Variables*/
+:root {
+    --main-color: #000000;
+    --secondary-color: #ffcc01;
+    --special-color: #96bece;
+    --backgroud-color: #ffffff;
+    --special-background: #f6f5f3;
+    --footer-background: #20373d;
+    --footer-color: #f9ffff;
+    --line-height: 1.6;
+}
+/*End Variables*/
+/*Start Global Rules*/
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Benne', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+    max-width: 1120px;
+}
+/*End Global Rules*/
+/*Start Headear*/
+.top-header {
+    display: flex;
+}
+.logo {
+    font-weight: bold;
+    font-size: 25pt;
+}
+.menue {
+    display: flex;
+}
+ul {
+    list-style: none;
+    display: flex;
+    padding-right: 60px;
+}
+ul li a{
+    color: var(--main-color);
+    text-decoration: none;
+    padding: 9px;
+    font-size: 13pt;
+    font-weight: 400;
+}
+ul li:hover {
+    background-color: var(--footer-background) ;
+    padding: 10px;
+    
+}
+ul li:hover a {
+    color: var(--backgroud-color);
+}
+.items {
+    display: flex;
+}
+.item {
+    
+    padding: 18px;
+} 
+.items .item a {
+    font-size: 13pt;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--main-color);
+}
+.yeloo {
+    padding: 18px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+.yeloo a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 13pt;
+    font-weight: 400;
+}
+.second-header .back {
+    background-color: var(--special-color); 
+    height: 600px;
+    width: 900px;
+    margin-left: 200px;
+    margin-top: 20px;
+    z-index: 1;
+    position: relative;
+}
+.second-header .text {
+    position: absolute;
+    left: -23%;
+    top: 25%;
+    z-index: 2;
+}
+.second-header .special-text {
+    font-size: 61.64pt;
+    font-weight: 600;
+    width: 834px;
+    text-decoration: underline;  
+}
+.search {
+    display: flex;
+    margin-top: 50px;
+}
+.search i {
+    color: #95a2b4;
+}
+.searchtext {
+    color: #95a2b4;
+    font-size: 15pt;
+    padding: 10px 100px 10px 12px;
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+}
+.searchtext input[type=text] {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    color: #95a2b4;
+}
+.search i{
+    color: #95a2b4;
+    font-size: 15pt;
+    padding: 10px 0;
+}
+.yeloo-search {
+    padding: 20px 10px;
+    background-color: var(--secondary-color);
+    font-weight: var(--footer-color)bold;
+}
+.left-side {
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    z-index: 2;
+}
+.left-side .phone {
+    padding: 5px 10px;
+}
+.left-side .position {
+    padding: 5px 15px;
+}
+.left-side i {
+    color: var(--backgroud-color);
+    padding-right: 10px;
+}
+
+/*Start Headear*/
