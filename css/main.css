@@ -258,6 +258,10 @@ ul li:hover a {
     background-color: var(--backgroud-color);
     font-size: 15pt;
 }
+.appartements .container .contents-search .view a {
+    color: var(--main-color);
+    text-decoration: none;
+}
 .appartements .container .contents-search .search-box .search {
     margin-top: 30px;
 }
