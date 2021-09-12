@@ -751,9 +751,12 @@ ul li:hover a {
 .location .container .partition-third .contents {
     margin-top: 80px;
 }
-.location .container .partition-firist .contents .block,
+
+@media (min-width: 1166px) {
+    .location .container .partition-firist .contents .block,
 .location .container .partition-third .contents .block {
     margin-left: 120px;
+}
 }
 .location .container .partition-second .contents .block {
     margin-right: 120px;
@@ -865,4 +868,3 @@ ul li:hover a {
     font-size: 13pt;
 }
 /*End Footer*/
-
