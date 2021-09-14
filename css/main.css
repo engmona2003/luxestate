@@ -15,16 +15,28 @@
     box-sizing: border-box;
     color: var(--main-color);
 }
-body {
-    font-family: 'Benne', serif;
-    font-family: 'Montserrat', sans-serif;
+p {
+    line-height: 1.6;
+}
+@media (min-width: 500px) {
+    body {
+        font-family: 'Benne', serif;
+        font-family: 'Montserrat', sans-serif;
+        width: 630px;
+    }
+}
+@media (min-width: 500px) {
+    body {
+        font-family: 'Benne', serif;
+        font-family: 'Montserrat', sans-serif;
+    }
 }
 html {
     scroll-behavior: smooth;
 }
 .container {
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 60px;
+    padding-top: 60px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -43,7 +55,7 @@ html {
 }
 .logo {
     font-weight: bold;
-    font-size: 25pt;
+    font-size: 25px;
 }
 @media (min-width: 300px) {
     .menue .items{
@@ -69,7 +81,7 @@ ul {
         color: var(--main-color);
         text-decoration: none;
         padding: 9px;
-        font-size: 6pt;
+        font-size: 12px;
         font-weight: 400;
         padding: 10px;
         background-color: #fff;
@@ -81,7 +93,7 @@ ul {
         color: var(--main-color);
         text-decoration: none;
         padding: 9px;
-        font-size: 11pt;
+        font-size: 13px;
         font-weight: 400;
         padding: 10px;
         background-color: #fff;
@@ -93,7 +105,7 @@ ul {
         color: var(--main-color);
         text-decoration: none;
         padding: 9px;
-        font-size: 12pt;
+        font-size: 12px;
         font-weight: 400;
         padding: 10px;
         background-color: #fff;
@@ -105,7 +117,7 @@ ul {
         color: var(--main-color);
         text-decoration: none;
         padding: 9px;
-        font-size: 13pt;
+        font-size: 13px;
         font-weight: 400;
         padding: 10px;
         background-color: #fff;
@@ -124,7 +136,7 @@ ul li:hover a {
     padding: 18px;
 } 
 .items .item a {
-    font-size: 13pt;
+    font-size: 13px;
     font-weight: 400;
     text-decoration: none;
     color: var(--main-color);
@@ -137,7 +149,7 @@ ul li:hover a {
 .yeloo a {
     text-decoration: none;
     color: var(--main-color);
-    font-size: 13pt;
+    font-size: 13px;
     font-weight: 400;
 }
 .second-header .back {
@@ -150,42 +162,61 @@ ul li:hover a {
     position: relative;
     color: var(--main-color);
 }
-.second-header .text {
-    position: absolute;
-    left: -23%;
-    top: 25%;
-    z-index: 2;
+.second-header .text p {
+    line-height: 1.6;
 }
 @media (min-width: 300px) {
     .second-header .special-text {
-        font-size: 20pt;
+        font-size: 20px;
         font-weight: 600;
         max-width: 443px;
         text-decoration: underline;  
         color: var(--main-color);
+        position: absolute;
+        top: 16%;
+        left: -23%;
     }
 }
 @media (min-width: 790px) {
     .second-header .special-text {
-        font-size: 30pt;
+        font-size: 30px;
         font-weight: 600;
         max-width: 705px;
         text-decoration: underline;  
         color: var(--main-color);
+        position: absolute;
+        top: 16%;
+        left: -23%;
     }
 }
 @media (min-width: 952px) {
     .second-header .special-text {
-        font-size: 61.64pt;
+        font-size: 61.64px;
         font-weight: 600;
         max-width: 834px;
         text-decoration: underline;  
         color: var(--main-color);
+        position: absolute;
+        top: 16%;
+        left: -23%;
     }
 }
 .search {
     display: flex;
-    margin-top: 50px;
+}
+.search .text-search {
+    position: relative;
+    left: -3%;
+    bottom: 48%;
+    position: absolute;
+    left: -3%;
+}
+.search .text-search .searchtext {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .search i {
     color: #95a2b4;
@@ -193,19 +224,27 @@ ul li:hover a {
 @media (min-width: 300px) {
     .searchtext {
         color: #95a2b4;
-        font-size: 6pt;
-        padding: 10px 100px 10px 12px;
+        font-size: 6px;
+        padding: 10px 62px 10px 12px;
         background-color: #fff;
         border: 1px solid #f0f0f0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
     }
 }
 @media (min-width: 646px) {
     .searchtext {
         color: #95a2b4;
-        font-size: 15pt;
+        font-size: 15px;
         padding: 10px 100px 10px 12px;
         background-color: #fff;
         border: 1px solid #f0f0f0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
     }
 }
 .searchtext input[type=text] {
@@ -214,17 +253,36 @@ ul li:hover a {
     resize: none;
     outline: none;
     color: #919eb1;
+    position: relative;
+    
+}
+.searchtext .text {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
 }
 .search i{
     color: #95a2b4;
-    font-size: 15pt;
-    padding: 10px 0;
+    font-size: 15px;
+    padding: 10px;
 }
 .yeloo-search {
-    padding: 20px 10px;
+    position: absolute;
+    top: 47.2%;
+    left: 16.2%;
+    padding: 29px 38px;
     background-color: var(--secondary-color);
     font-weight: bold;
     color: var(--main-color);
+    border-radius: 0 6px 6px 0;
+}
+.yeloo-search .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
 }
 .left-side {
     display: flex;
@@ -245,53 +303,83 @@ ul li:hover a {
     color: var(--backgroud-color);
     padding-right: 10px;
 }
-/*End Headear*/
-
-/*Start Statisctics*/
-.statistics {
-    margin-bottom: 40px;
+.Scroll-down {
+    color: #919eb1;
+    transform: rotate(-90deg);
+    display: inline-block;
+    position: absolute;
+    left: -27%;
+    bottom: 7%;
+    font-size: 12px;
 }
+.Scroll-down .text {
+    display: inline-block;
+    margin-left: 7px;
+}
+.Scroll-down i {
+    color: #919eb1;
+}
+/*End Headear*/
+/*Start Statisctics*/
 .statistics .contents {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     grid-gap: 20px;
 }
 .statistics .contents .header {
-    font-size: 40pt;
+    font-size: 40px;
     padding-bottom: 20px;
     color: var(--main-color);
 }
-.statistics .contents .header .text p{
-    font-size: 13pt;
+.statistics .contents .text p{
+    font-size: 13px;
+    line-height: 1.6;
 }
-.statistics .contents .part-two {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 20px;
+@media (min-width: 300px) {
+    .statistics .contents .part-two {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 80px;
+    }
+}
+@media (min-width: 784px) {
+    .statistics .contents .part-two {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 20px;
+    }
 }
 .statistics .contents .part-two .block {
-    padding: 66px;
     background-color: var(--special-background);
     text-align: center;
+    position: relative;
+}
+.statistics .contents .part-two .block .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .statistics .contents .part-two .block .number {
     color: var(--secondary-color);
-    font-size: 14pt;
+    font-size: 40px;
     font-weight: bold;
     padding-bottom: 10px;
 }
 .statistics .contents .part-two .block .flag {
-    font-weight: 14pt;
+    font-size: 14px;
 }
-/*Start Statisctics*/
+/*End Statisctics*/
 /*Start Appartements*/
 .appartements {
     background-color: var(--special-background)
 }
 .appartements .container .header {
     color: var(--main-color);
-    font-size: 40pt;
+    font-size: 40px;
     width: 615px;
+    font-weight: bold;
 }
 .appartements .container .blocks{
     display: grid;
@@ -301,6 +389,7 @@ ul li:hover a {
 }
 .appartements .container .block {
     border: 2px solid #f0f0f0;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 .appartements .container .blocks .contents {
     background-color: var(--backgroud-color);
@@ -343,13 +432,13 @@ ul li:hover a {
     width: 100%;
 }
 .appartements .container .blocks .address {
-    font-size: 13pt;
+    font-size: 13px;
     margin-bottom: 15px;
     color: #1f373d;
 }
 .appartements .container .blocks .price {
     color: var(--secondary-color);
-    font-size: 18pt;
+    font-size: 18px;
 }
 .appartements .container .blocks .path .text,
 .appartements .container .blocks .bed .text {
@@ -363,32 +452,14 @@ ul li:hover a {
 .appartements .container .blocks .bed {
     display: flex;
 }
-.appartements .container .contents-search {
-    display: flex;
-    margin-bottom: 20px;
-}
-.appartements .container .contents-search .view {
-    padding: 20px 25px;
-    margin-top: 30px;
-    margin-left: 31px;
-    background-color: var(--backgroud-color);
-    font-size: 15pt;
-}
-.appartements .container .contents-search .view a {
-    color: #1f373d;
-    text-decoration: none;
-}
-.appartements .container .contents-search .search-box .search {
-    margin-top: 30px;
-}
 /*End Appartements*/
 /*Start Services*/
 .services .container .head {
-    font-size: 40pt;
+    font-size: 40px;
 }
 .services .container p {
-    width: 624px;
-    font-size: 13pt;
+    max-width: 624px;
+    font-size: 13px;
     margin-bottom: 55px;
     color: var(--main-color);
 }
@@ -402,12 +473,14 @@ ul li:hover a {
     background-color: var(--secondary-color);
     position: relative;
     border: 2px solid #f0f0f0;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 .services .blocks .block-second,
 .services .blocks .block-third {
     background-color: var(--backgroud-color);
     position: relative;
     border: 1px solid #f0f0f0;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 @media (min-width: 300px) {
     .services .blocks .block-firist .number {
@@ -434,7 +507,7 @@ ul li:hover a {
 .services .blocks .block-firist .head {
     padding-top: 125px;
     margin-left: 52px;
-    font-size: 18pt;
+    font-size: 18px;
     color: var(--backgroud-color);
 }
 
@@ -444,7 +517,7 @@ ul li:hover a {
 }
 @media (min-width: 300px) {
     .services .blocks .block-firist  p {
-        font-size: 13pt;
+        font-size: 13px;
         width: 258px;
         padding-left: 83px;
         color: var(--backgroud-color);
@@ -453,7 +526,7 @@ ul li:hover a {
 }
 @media (min-width: 1113px) {
     .services .blocks .block-firist  p {
-        font-size: 13pt;
+        font-size: 13px;
         width: 338px;
         padding-left: 83px;
         color: var(--backgroud-color);
@@ -461,7 +534,7 @@ ul li:hover a {
     }
 }
 .services .blocks .block-firist .location {
-    font-size: 13pt;
+    font-size: 13px;
     padding-left: 83px;
     color: var(--backgroud-color);
     margin-bottom: 40px;
@@ -504,7 +577,7 @@ ul li:hover a {
 .services .blocks .block-second .head {
     padding-top: 125px;
     margin-left: 52px;
-    font-size: 18pt;
+    font-size: 18px;
     color: var(--main-color)
 }
 .services .blocks .block-second .head span {
@@ -512,7 +585,7 @@ ul li:hover a {
 }
 @media (min-width: 300px) {
     .services .blocks .block-second  p {
-        font-size: 13pt;
+        font-size: 13px;
         width: 258px;
         padding-left: 83px;
         color: var(--main-color);
@@ -521,7 +594,7 @@ ul li:hover a {
 }
 @media (min-width: 1113px) {
     .services .blocks .block-second  p {
-        font-size: 13pt;
+        font-size: 13px;
         width: 338px;
         padding-left: 83px;
         color: var(--main-color);
@@ -529,7 +602,7 @@ ul li:hover a {
     }
 }
 .services .blocks .block-second .location {
-    font-size: 13pt;
+    font-size: 13px;
     padding-left: 83px;
     color: var(--main-color);
     margin-bottom: 40px;
@@ -572,7 +645,7 @@ ul li:hover a {
 .services .blocks .block-third .head {
     padding-top: 125px;
     margin-left: 52px;
-    font-size: 18pt;
+    font-size: 18px;
     color: var(--main-color)
 }
 .services .blocks .block-third .head span {
@@ -580,7 +653,7 @@ ul li:hover a {
 }
 @media (min-width: 300px) {
     .services .blocks .block-third  p {
-        font-size: 13pt;
+        font-size: 13px;
         width: 258px;
         padding-left: 83px;
         color: var(--main-color);
@@ -589,7 +662,7 @@ ul li:hover a {
 }
 @media (min-width: 1113px) {
     .services .blocks .block-third  p {
-        font-size: 13pt;
+        font-size: 13px;
         width: 338px;
         padding-left: 83px;
         color: var(--main-color);
@@ -597,7 +670,7 @@ ul li:hover a {
     }
 }
 .services .blocks .block-third .location {
-    font-size: 13pt;
+    font-size: 13px;
     padding-left: 83px;
     color: var(--main-color);
     margin-bottom: 40px;
@@ -614,11 +687,11 @@ ul li:hover a {
     top: 10px;
 }
 .services .container .part .header {
-    font-size: 40pt;
-    margin-top: 50px;
+    font-size: 40px;
+    margin-top: 60px;
 }
 .services .container .part p {
-    font-size: 13pt;   
+    font-size: 13px;   
 }
 .services .container .partitions {
     display: grid;
@@ -633,10 +706,11 @@ ul li:hover a {
     margin-left: 55px;
 }
 .services .container .partitions .contents .block .head {
-    font-size: 25pt;
+    font-size: 25px;
+    font-weight: bold;
 }
 .services .container .partitions .contents .block p {
-    font-size: 13pt;
+    font-size: 13px;
     width: 477px;
 }
 /*End Services*/
@@ -645,7 +719,7 @@ ul li:hover a {
     background-color: var(--special-background);
 }
 .agents .container .header {
-    font-size: 40pt;
+    font-size: 40px;
 }
 .agents .container .blocks {
     display: grid;
@@ -664,7 +738,7 @@ ul li:hover a {
 }
 .agents .container .blocks .block .content .type {
     margin-bottom: 10px;
-    font-size: 15pt;
+    font-size: 15px;
     font-weight: bold;
 }
 .agents .container .blocks .block .content .name {
@@ -680,11 +754,54 @@ ul li:hover a {
 .agents .container .blocks .block .content .row .media i:nth-child(2) {
     margin-right: 10px;
 }
+.agents .container .search-block {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.agents .container .search-block .search{
+    position: relative;
+}
+.agents .container .search-block .search .text-search{
+    position: absolute;
+    top: 45%;
+    left: 15.5%;
+    margin-top: 30px;
+}
+.agents .container .search-block .search .yeloo-search {
+    position: absolute;
+    top: 45%;
+    left: 31%;
+}
+@media (min-width: 300px) {
+    .agents .container .search-block .search .text-view{
+        position: absolute;
+        top: 45%;
+        left: 46%;
+        background-color: var(--backgroud-color);
+        padding: 29px 178px;;
+    }
+}
+@media (min-width: 500px) {
+    .agents .container .search-block .search .text-view{
+        position: absolute;
+        top: 45%;
+        left: 46%;
+        background-color: var(--backgroud-color);
+        padding: 29px 146px;;
+    }
+}
+.agents .container .search-block .search .view .block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+    
+}
 /*End Agents*/
 /*Start Location*/
-.location .container .partition-firist {
-    margin-top: 20px;
-}
 .location .container .partition-firist,
 .location .container .partition-second,
 .location .container .partition-third {
@@ -699,12 +816,12 @@ ul li:hover a {
 .location .container .partition-firist .contents .block .head,
 .location .container .partition-second .contents .block .head,
 .location .container .partition-third .contents .block .head{
-    font-size: 25pt;
+    font-size: 25px;
 }
 .location .container .partition-firist .contents .block .text p,
 .location .container .partition-second .contents .block .text p,
 .location .container .partition-third .contents .block .text p {
-    font-size: 13pt;
+    font-size: 13px;
     width: 415px;
 }
 .location .container .partition-firist .imag,
@@ -769,7 +886,7 @@ ul li:hover a {
 .location .container .partition-third .contents .block .show a {
     text-decoration: none;
     color: var(--backgroud-color);
-    font-size: 18pt;
+    font-size: 18px;
 }
 /*End Location*/
 /*Start Footer*/
@@ -787,7 +904,7 @@ ul li:hover a {
 }
 .footer .container .partition-firist .text,
 .footer .container .partition-firist .text  .row{
-    font-size: 40pt;
+    font-size: 40px;
     color: var(--backgroud-color);
 }
 .footer .container .partition-firist .contents .block {
@@ -829,35 +946,35 @@ ul li:hover a {
 }
 @media (min-width: 300px) {
     .footer .container .partition-second .block .text:first-child {
-        font-size: 25pt;
+        font-size: 25px;
         margin-bottom: 400px;
         margin-top: 30px;
     }
 }
 @media (min-width: 701px) {
     .footer .container .partition-second .block .text:first-child {
-        font-size: 25pt;
+        font-size: 25px;
         margin-bottom: 200px;
         margin-top: 30px;
     }
 }
 @media (min-width: 1037px) {
     .footer .container .partition-second .block .text:first-child {
-        font-size: 25pt;
+        font-size: 25px;
         margin-bottom: 80px;
         margin-top: 30px;
     }
 }
 
 .footer .container .partition-second .block .copy {
-    font-size: 14pt;
+    font-size: 14px;
     width: 175px;
     color: var(--backgroud-color);
 }
 .footer .container .partition-second .block .head,
 .footer .container .partition-second .block .text,
 .footer .container .partition-second .block-All .block-sub .text{
-    font-size: 13pt;
+    font-size: 13px;
     margin-bottom: 10px;
     color: var(--backgroud-color);
 }
@@ -865,6 +982,6 @@ ul li:hover a {
 .footer .container .partition-second .block-All .block-sub .head {
     margin-bottom: 20px;
     color: #919eb1;
-    font-size: 13pt;
+    font-size: 13px;
 }
 /*End Footer*/
