@@ -22,7 +22,7 @@ p {
     body {
         font-family: 'Benne', serif;
         font-family: 'Montserrat', sans-serif;
-        width: 630px;
+        min-width: 630px;
     }
 }
 @media (min-width: 500px) {
