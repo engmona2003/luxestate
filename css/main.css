@@ -18,18 +18,9 @@
 p {
     line-height: 1.6;
 }
-@media (min-width: 500px) {
-    body {
-        font-family: 'Benne', serif;
-        font-family: 'Montserrat', sans-serif;
-        min-width: 630px;
-    }
-}
-@media (min-width: 500px) {
-    body {
-        font-family: 'Benne', serif;
-        font-family: 'Montserrat', sans-serif;
-    }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 html {
     scroll-behavior: smooth;
@@ -262,7 +253,7 @@ ul li:hover a {
     .searchtext {
         color: #95a2b4;
         font-size: 6px;
-        padding: 10px 62px 10px 12px;
+        padding: 10px 7px 10px 12px;
         background-color: #fff;
         border: 1px solid #f0f0f0;
         position: absolute;
@@ -271,11 +262,11 @@ ul li:hover a {
         transform: translateX(-50%) translateY(-50%);
     }
 }
-@media (min-width: 646px) {
+@media (min-width: 730px) {
     .searchtext {
         color: #95a2b4;
         font-size: 15px;
-        padding: 10px 100px 10px 12px;
+        padding: 10px 100px 10px 28px;
         background-color: #fff;
         border: 1px solid #f0f0f0;
         position: absolute;
@@ -304,15 +295,30 @@ ul li:hover a {
     font-size: 15px;
     padding: 10px;
 }
-.yeloo-search {
-    position: absolute;
-    top: 47.2%;
-    left: 16.2%;
-    padding: 29px 38px;
-    background-color: var(--secondary-color);
-    font-weight: bold;
-    color: var(--main-color);
-    border-radius: 0 6px 6px 0;
+@media (min-width: 300px) {
+    .yeloo-search {
+        font-size: 12px;
+        position: absolute;
+        top: 47.2%;
+        left: 16.2%;
+        padding: 29px 20px;
+        background-color: var(--secondary-color);
+        font-weight: bold;
+        color: var(--main-color);
+        border-radius: 0 6px 6px 0;
+    }
+}
+@media (min-width: 560px) {
+    .yeloo-search {
+        position: absolute;
+        top: 47.2%;
+        left: 16.2%;
+        padding: 29px 38px;
+        background-color: var(--secondary-color);
+        font-weight: bold;
+        color: var(--main-color);
+        border-radius: 0 6px 6px 0;
+    }
 }
 .yeloo-search .text {
     position: absolute;
@@ -424,7 +430,7 @@ ul li:hover a {
 @media (min-width: 784px) {
     .statistics .contents .part-two {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
         grid-gap: 20px;
     }
 }
@@ -901,7 +907,7 @@ ul li:hover a {
         top: 45%;
         left: 46%;
         background-color: var(--backgroud-color);
-        padding: 29px 121px;;
+        padding: 29px 105px;;
     }
 }
 @media (min-width: 500px) {
@@ -930,6 +936,15 @@ ul li:hover a {
     grid-gap: 20px;
 }
 }
+@media (min-width: 600px) {
+    .location .container .partition-firist,
+.location .container .partition-second,
+.location .container .partition-third {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(423px, 1fr));
+    grid-gap: 20px;
+}
+}
 @media (min-width: 1166px) {
     .location .container .partition-firist,
 .location .container .partition-second,
@@ -952,7 +967,7 @@ ul li:hover a {
 .location .container .partition-second .contents .block .text p,
 .location .container .partition-third .contents .block .text p {
     font-size: 13px;
-    width: 415px;
+    max-width: 415px;
 }
 .location .container .partition-firist .imag,
 .location .container .partition-second .imag,
@@ -967,13 +982,25 @@ ul li:hover a {
     background-color: var(--secondary-color);
     display: flex;
 }
-.location .container .partition-second .imag .position {
-    position: absolute;
-    right: -4%;
-    bottom: -8%;
-    padding: 20px 40px;
-    background-color: var(--secondary-color);
-    display: flex;
+@media (min-width: 300px) {
+    .location .container .partition-second .imag .position {
+        position: absolute;
+        right: 50%;
+        bottom: -8%;
+        padding: 20px 40px;
+        background-color: var(--secondary-color);
+        display: flex;
+    }
+}
+@media (min-width: 1166px) {
+    .location .container .partition-second .imag .position {
+        position: absolute;
+        right: -4%;
+        bottom: -8%;
+        padding: 20px 40px;
+        background-color: var(--secondary-color);
+        display: flex;
+    }
 }
 .location .container .partition-third .imag .position {
     position: absolute;
@@ -992,6 +1019,7 @@ ul li:hover a {
 .location .container .partition-second .imag img,
 .location .container .partition-third .imag img {
     width: 100%;
+    height: 100%;
 }
 .location .container .partition-firist .contents,
 .location .container .partition-second .contents,
@@ -1068,16 +1096,47 @@ ul li:hover a {
 }
 @media (min-width: 300px) {
     .footer .container .partition-second .block-All {
-        width: 724px;
+        width: 76px;
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+        grid-gap: 5px;
+        margin-left: 20px;
+    }
+}
+@media (min-width: 500px) {
+    .footer .container .partition-second .block-All {
+        width: 164px;
         padding-top: 30px;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(163px, 1fr));
         grid-gap: 5px;
+        margin-left: 20px;
+    }
+}
+@media (min-width: 800px) {
+    .footer .container .partition-second .block-All {
+        width: 490px;
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(163px, 1fr));
+        grid-gap: 5px;
+        margin-left: 20px;
     }
 }
 @media (min-width: 900px) {
     .footer .container .partition-second .block-All {
-        width: 724px;
+        width: 652px;
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(163px, 1fr));
+        grid-gap: 5px;
+        margin-left: 50px;
+    }
+}
+@media (min-width: 1000px) {
+    .footer .container .partition-second .block-All {
+        width: 668px;
         padding-top: 30px;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(163px, 1fr));
@@ -1088,14 +1147,14 @@ ul li:hover a {
 @media (min-width: 300px) {
     .footer .container .partition-second .block .text:first-child {
         font-size: 25px;
-        margin-bottom: 400px;
+        margin-bottom: 362px;
         margin-top: 30px;
     }
 }
-@media (min-width: 701px) {
+@media (min-width: 800px) {
     .footer .container .partition-second .block .text:first-child {
         font-size: 25px;
-        margin-bottom: 200px;
+        margin-bottom: 185px;
         margin-top: 30px;
     }
 }
