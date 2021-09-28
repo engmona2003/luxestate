@@ -193,19 +193,8 @@ ul li:hover a {
 .second-header .text p {
     line-height: 1.6;
 }
+
 @media (min-width: 300px) {
-    .second-header .special-text {
-        font-size: 20px;
-        font-weight: 600;
-        max-width: 443px;
-        text-decoration: underline;  
-        color: var(--main-color);
-        position: absolute;
-        top: 16%;
-        left: -23%;
-    }
-}
-@media (min-width: 790px) {
     .second-header .special-text {
         font-size: 30px;
         font-weight: 600;
@@ -252,8 +241,8 @@ ul li:hover a {
 @media (min-width: 300px) {
     .searchtext {
         color: #95a2b4;
-        font-size: 6px;
-        padding: 10px 7px 10px 12px;
+        font-size: 10px;
+        padding: 10px 27px 10px 12px;
         background-color: #fff;
         border: 1px solid #f0f0f0;
         position: absolute;
@@ -262,7 +251,7 @@ ul li:hover a {
         transform: translateX(-50%) translateY(-50%);
     }
 }
-@media (min-width: 730px) {
+@media (min-width: 830px) {
     .searchtext {
         color: #95a2b4;
         font-size: 15px;
@@ -300,8 +289,8 @@ ul li:hover a {
         font-size: 12px;
         position: absolute;
         top: 47.2%;
-        left: 16.2%;
-        padding: 29px 20px;
+        left: 44.2%;
+        padding: 29px 32px;
         background-color: var(--secondary-color);
         font-weight: bold;
         color: var(--main-color);
@@ -320,21 +309,34 @@ ul li:hover a {
         border-radius: 0 6px 6px 0;
     }
 }
+
 .yeloo-search .text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 40px;
+    padding: 22px 2px;
 }
-.left-side {
-    display: flex;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding: 10px;
-    background-color: var(--secondary-color);
-    z-index: 2;
+@media (min-width: 300px) {
+    .left-side {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 10px;
+        background-color: var(--secondary-color);
+        z-index: 2;
+    }
+}
+@media (min-width: 533px) {
+    .left-side {
+        display: flex;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 10px;
+        background-color: var(--secondary-color);
+        z-index: 2;
+    }
 }
 .left-side .phone {
     padding: 5px 10px;
@@ -352,12 +354,12 @@ ul li:hover a {
         transform: rotate(-90deg);
         display: inline-block;
         position: absolute;
-        left: -8%;
+        left: -74%;
         bottom: 7%;
         font-size: 12px;
     }
 }
-@media (min-width: 600px) {
+@media (min-width: 360px) {
     .Scroll-down {
         color: #919eb1;
         transform: rotate(-90deg);
@@ -589,7 +591,7 @@ ul li:hover a {
         position: absolute;
         clip: rect(95px, 260px, 199px, 40px);
         left: -14%;
-        top: -27%;
+        top: -29%;
     }
 }
 @media (min-width: 1118px) {
@@ -658,7 +660,7 @@ ul li:hover a {
         position: absolute;
         clip: rect(95px, 260px, 199px, 40px);
         left: -14%;
-        top: -27%;
+        top: -29%;
     }
 }
 @media (min-width: 1118px) {
@@ -726,7 +728,7 @@ ul li:hover a {
         position: absolute;
         clip: rect(95px, 260px, 199px, 40px);
         left: -14%;
-        top: -27%;
+        top: -29%;
     }
 }
 @media (min-width: 1118px) {
@@ -890,24 +892,59 @@ ul li:hover a {
 .agents .container .search-block .search{
     position: relative;
 }
-.agents .container .search-block .search .text-search{
-    position: absolute;
-    top: 45%;
-    left: 15.5%;
-    margin-top: 30px;
+@media (min-width: 300px) {
+    .agents .container .search-block .search .text-search{
+        position: absolute;
+        top: 45%;
+        left: 33.5%;
+        margin-top: 30px;
+    }
 }
-.agents .container .search-block .search .yeloo-search {
-    position: absolute;
-    top: 45%;
-    left: 31%;
+@media (min-width: 495px) {
+    .agents .container .search-block .search .text-search{
+        position: absolute;
+        top: 45%;
+        left: 16.5%;
+        margin-top: 30px;
+    }
+}
+@media (min-width: 1086px) {
+    .agents .container .search-block .search .text-search{
+        position: absolute;
+        top: 45%;
+        left: 15.5%;
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 300px) {
+    .agents .container .search-block .search .yeloo-search {
+        position: absolute;
+        top: 45%;
+        left: 45%;
+    }
+}
+@media (min-width: 495px) {
+    .agents .container .search-block .search .yeloo-search {
+        position: absolute;
+        top: 45%;
+        left: 33%;
+    }
+}
+@media (min-width: 1086px) {
+    .agents .container .search-block .search .yeloo-search {
+        position: absolute;
+        top: 45%;
+        left: 31%;
+    }
 }
 @media (min-width: 300px) {
     .agents .container .search-block .search .text-view{
         position: absolute;
         top: 45%;
-        left: 46%;
+        left: 67%;
         background-color: var(--backgroud-color);
-        padding: 29px 105px;;
+        padding: 29px 48px;
     }
 }
 @media (min-width: 500px) {
@@ -954,9 +991,17 @@ ul li:hover a {
     grid-gap: 20px;
 }
 }
-.location .container .partition-firist,
-.location .container .partition-second {
+@media (min-width: 300px) {
+    .location .container .partition-firist,
+    .location .container .partition-second {
+    margin-bottom: 38px;
+}
+}
+@media (min-width: 600px) {
+    .location .container .partition-firist,
+    .location .container .partition-second {
     margin-bottom: 60px;
+}
 }
 .location .container .partition-firist .contents .block .head,
 .location .container .partition-second .contents .block .head,
@@ -976,7 +1021,7 @@ ul li:hover a {
 }
 .location .container .partition-firist .imag .position {
     position: absolute;
-    right: 30%;
+    right: 11%;
     bottom: -8%;
     padding: 20px 40px;
     background-color: var(--secondary-color);
@@ -985,7 +1030,7 @@ ul li:hover a {
 @media (min-width: 300px) {
     .location .container .partition-second .imag .position {
         position: absolute;
-        right: 50%;
+        right: 11%;
         bottom: -8%;
         padding: 20px 40px;
         background-color: var(--secondary-color);
@@ -1055,10 +1100,19 @@ ul li:hover a {
 .footer .container .partitions .part-one .text .row {
     width: 512px;
 }
-.footer .container .partition-firist {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@media (min-width: 300px) {
+    .footer .container .partition-firist {
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media (min-width: 630px) {
+    .footer .container .partition-firist {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
 }
 .footer .container .partition-firist .text,
 .footer .container .partition-firist .text  .row{
@@ -1070,6 +1124,16 @@ ul li:hover a {
     justify-content: space-between;
     padding: 25px;
     background-color: var(--backgroud-color);
+}
+@media (min-width: 300px) {
+    .footer .container .partition-firist .contents {
+        margin-top: 20px;
+    }
+}
+@media (min-width: 630px) {
+    .footer .container .partition-firist .contents {
+        margin-top: 0;
+    }
 }
 .footer .container .partition-firist .contents .block .sub {
     text-decoration: none;
@@ -1093,6 +1157,7 @@ ul li:hover a {
 }
 .footer .container .partition-second {
     display: flex;
+    justify-content: space-around;
 }
 @media (min-width: 300px) {
     .footer .container .partition-second .block-All {
