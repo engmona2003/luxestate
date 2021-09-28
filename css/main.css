@@ -587,22 +587,36 @@ ul li:hover a {
     .services .blocks .block-firist .number {
         font-size: 200px;
         font-weight: 600;
-        color: var(--backgroud-color);
+        color: var(--main-color);
         position: absolute;
-        clip: rect(95px, 260px, 199px, 40px);
-        left: -14%;
-        top: -29%;
-    }
-}
-@media (min-width: 1118px) {
-    .services .blocks .block-firist .number {
-        font-size: 200px;
-        font-weight: 600;
-        color: var(--backgroud-color);
         position: absolute;
         clip: rect(95px, 260px, 199px, 40px);
         left: -12%;
-        top: -30%;
+        top: -31%;
+    }
+}
+@media (min-width: 886px) {
+    .services .blocks .block-firist .number {
+        font-size: 200px;
+        font-weight: 600;
+        color: var(--main-color);
+        position: absolute;
+        position: absolute;
+        clip: rect(95px, 260px, 199px, 40px);
+        left: -10%;
+        top: -31%;
+    }
+}
+@media (min-width: 1112px) {
+    .services .blocks .block-firist .number {
+        font-size: 200px;
+        font-weight: 600;
+        color: var(--main-color);
+        position: absolute;
+        position: absolute;
+        clip: rect(95px, 260px, 199px, 40px);
+        left: -12%;
+        top: -33%;
     }
 }
 .services .blocks .block-firist .head {
@@ -659,11 +673,23 @@ ul li:hover a {
         position: absolute;
         position: absolute;
         clip: rect(95px, 260px, 199px, 40px);
-        left: -14%;
-        top: -29%;
+        left: -12%;
+        top: -31%;
     }
 }
-@media (min-width: 1118px) {
+@media (min-width: 886px) {
+    .services .blocks .block-second .number {
+        font-size: 200px;
+        font-weight: 600;
+        color: var(--main-color);
+        position: absolute;
+        position: absolute;
+        clip: rect(95px, 260px, 199px, 40px);
+        left: -10%;
+        top: -31%;
+    }
+}
+@media (min-width: 1112px) {
     .services .blocks .block-second .number {
         font-size: 200px;
         font-weight: 600;
@@ -672,7 +698,7 @@ ul li:hover a {
         position: absolute;
         clip: rect(95px, 260px, 199px, 40px);
         left: -12%;
-        top: -30%;
+        top: -33%;
     }
 }
 .services .blocks .block-second .head {
@@ -727,11 +753,23 @@ ul li:hover a {
         position: absolute;
         position: absolute;
         clip: rect(95px, 260px, 199px, 40px);
-        left: -14%;
-        top: -29%;
+        left: -12%;
+        top: -31%;
     }
 }
-@media (min-width: 1118px) {
+@media (min-width: 886px) {
+    .services .blocks .block-third .number {
+        font-size: 200px;
+        font-weight: 600;
+        color: var(--main-color);
+        position: absolute;
+        position: absolute;
+        clip: rect(95px, 260px, 199px, 40px);
+        left: -10%;
+        top: -31%;
+    }
+}
+@media (min-width: 1112px) {
     .services .blocks .block-third .number {
         font-size: 200px;
         font-weight: 600;
@@ -740,7 +778,7 @@ ul li:hover a {
         position: absolute;
         clip: rect(95px, 260px, 199px, 40px);
         left: -12%;
-        top: -30%;
+        top: -33%;
     }
 }
 .services .blocks .block-third .head {
